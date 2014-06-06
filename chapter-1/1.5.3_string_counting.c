@@ -120,13 +120,15 @@ exercise1_9()
     int c;
 
     while ((c = getchar()) != EOF) {
-        if ( c == '\t')
+        if ( c == '\t') {
             putchar('\\');
             c = 't';
+        }
 
-        if ( c == '\b')
+        if ( c == '\b') {
             putchar('\\');
             c = 'b';
+        }
 
         if ( c == '\b')
             putchar('\\');
